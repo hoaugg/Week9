@@ -10,6 +10,12 @@
     <h2>Java Script</h2>
     <p id="demo"></p>
     <p id="array"></p>
+    <table id="mytable">
+        <tr>
+            <td>Huy </td>
+            <td>Hoang</td>
+        </tr>
+    </table>
 
     <script>
         var person = 
@@ -21,7 +27,18 @@
         };
         var cars = ["Mercedes","Toyota","Volvo"];
         document.getElementById("array").innerHTML = cars;
-        document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName + " is "+ person.age + " Year old";
+        document.getElementById("demo").innerHTML = person.firstName
+         + " " + person.lastName
+          + " is "+ person.age + " Year old";
+
+        var table = 
+        document.getElementById("mytable");
+        var row=table.insertRow();
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+
+        cell1.innerHTML = "Hoang";
+        cell2.innerHTML = "Quang";
 
     </script>
 </body>
