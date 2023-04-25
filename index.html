@@ -9,6 +9,7 @@
 <body>
     <h2>Java Script</h2>
     <p id="demo"></p>
+    <p id="array"></p>
 
     <script>
         var person = 
@@ -18,8 +19,10 @@
             age:20,
             eyeColor:"Black"
         };
-
+        var cars = ["Mercedes","Toyota","Volvo"];
+        document.getElementById("array").innerHTML = cars;
         document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName + " is "+ person.age + " Year old";
+
     </script>
 </body>
 </html>
